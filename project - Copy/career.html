@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karir | PT Interskala Mandiri Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="image/IMI-min.webp" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- header section starts  -->
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo">
+                <img src="image/logo-pt-valid-1.webp" alt="Company Logo" />
+            </a>
+            <nav class="navbar">
+                <a href="index.html">Beranda</a>
+                <a href="about.html">Tentang</a>
+                <a href="product.html">Produk</a>
+                <a href="contact.html">Kontak</a>
+                <a href="warranty.html">Garansi</a>
+                <a href="#blogs">Service Center</a>
+                <a href="#careers">Karir</a>
+            </nav>
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"></div>
+                <div class="fas fa-search" id="search-btn"></div>
+            </div>
+            <form action="" class="search-form">
+                <input type="search" id="search-box" placeholder="search here..." />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </section>
+    </header>
+    <!-- header section ends -->
+
+    <div class="karir-container">
+        <section class="home" id="home">
+            <div class="content">
+            <h1 class="heading"></h1>
+            <P></P>
+          </div> 
+        </section>
+    </div>
+
+
+   
+    <h1 class="heading">Mari Bergabung<span>Bersama Kami</span></h1>
+
+
+    <div class="container">
+        <div class="karir-wrapper">
+            <div class="karir" data-job="Purchasing Ekspor & Impor">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>Purchasing Ekspor & Impor</h2>
+                <button class="btn" onclick="openModal('Purchasing Ekspor & Impor')">Selengkapnya</button>
+            </div>
+            <div class="karir" data-job="Teknisi">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>Teknisi</h2>
+                <button class="btn" onclick="openModal('Teknisi')">Selengkapnya</button>
+            </div>
+            <div class="karir" data-job="Leader R & D">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>Leader R & D</h2>
+                <button class="btn" onclick="openModal('R & D')">Selengkapnya</button>
+            </div>
+            <div class="karir" data-job="FAT">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>Manager FAT ( Finance, Accounting, & TAX )</h2>
+                <button class="btn" onclick="openModal('FAT')">Selengkapnya</button>
+            </div>
+            <div class="karir" data-job="HRD">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>HRD Officer</h2>
+                <button class="btn" onclick="openModal('HRD')">Selengkapnya</button>
+            </div>
+            <div class="karir" data-job="Audit">
+                <img src="image/IMI-min.webp" alt="Thin Image" class="thin-image" />
+                <h2>Audit Officer</h2>
+                <button class="btn" onclick="openModal('Audit')">Selengkapnya</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="jobModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalJobTitle"></h2>
+            <h3>Tanggung Jawab</h3>
+            <p id="modalJobResponsibilities"></p>
+            <h3>Kualifikasi</h3>
+            <p id="modalJobQualifications"></p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>PT Interskala Mandiri Indonesia</h3>
+            <p>EXPORTER, IMPORTER, DISTRIBUTOR & MANUFACTURER SCALE</p>
+            <div class="share">
+                <a href="https://www.facebook.com/interskalaofficial" class="fab fa-facebook-f"></a>
+                <a href="https://x.com/interskalagroup" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/interskalaofficial/" class="fab fa-instagram"></a>
+                <a href="https://id.linkedin.com/company/imimandiri" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      
+          <div class="box">
+            <a href="#" class="links">
+              <i class="fas fa-envelope"></i> sales@interskala.com
+            </a>
+            <a href="#" class="links">
+              <i class="fas fa-map-marker-alt"></i> Green Sedayu Biz Park Jl. Daan
+              Mogot KM. 18, DM 12 No.62, 3, RT.3/RW.8, Kalideres, West Jakarta
+              City, Jakarta 11840
+            </a>
+          </div>
+          
+        </div>
+      
+        <div class="credit">
+          Copyright <span> PT Interskala Mandiri Indonesia </span> | all rights
+          reserved
+        </div>
+      </section>
+      
+      <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        const jobDetails = {
+            "Purchasing Ekspor & Impor": {
+                responsibilities: "melakukan riset produk, membeli produk dan layanan serta menegosiasikan kontrak dan kesepakatan terbaik, melakukan pemeriksaan inventaris, memerikasa stok dan melaporkan barang yang salah atau inkonsistensi.",
+                qualifications: "gelar sarjanan di bidang bisnis atau bidang terkait, keterampilan komunikasi dan organisasi, keterampilan organisasi dan perencanaan yang hebat, kemampuan dalam mengidentifikasi tren pasar dan membuat keputusan."
+            },
+            "HRD": {
+                responsibilities: "mengatur pelatihan karyawan, memantau kinerja dan kehadiran karyawan, orientasi dan pelatihan anggota staf baru, mempertahankan kerahasiaan informasi karyawan dengan menggunakan HRIS atau perangkat lain yang relevan.",
+                qualifications: "memperoleh gelar sarjana 4 tahun dalam bidang terkait seperti bisnis atau psikologi dengan sertifikasi hr, keterampilan komunikasi lisan dan tulisan yang baik, keterampilan interpersonal yang sangat baik dengan kemampuan untuk mengelola situasi yang sensitif dan rahasia dengan profesionalisme serta diplomasi."
+            },
+            "Audit": {
+                responsibilities: "memeriksa & menganalisis data spreadsheet, memeriksa akun perusahaan & sistem pengendalian keuangan, memastikan perlindungan aset perusahaan, menyusun laporan, memastikan prosedur dan peraturan diikuti dan dipatuhi dengan benar.",
+                qualifications: "gelar dalam bidang akutansi /  gelar di bidang terkait khusus dalam akutansi, menyelesaikan gelar sarjana yang terakreditasi seperti sarjana bisnis (akuntansi) / sarjana akuntansi, lulusan baru di perbolehkan."
+            },
+            "Teknisi": {
+                responsibilities: "Melayani customer dengan baik, mengerjakan servis timbangan dengan detail, menganalisa kerusakan timbangan dan memahami cara kalibrasi dan membuat laporan pekerjaan setiap hari .",
+                qualifications: "gelar sarjana dalam bidang teknisi atau gelar bidang terkait, teliti dan bertanggung jawab, mampu bekerja secara individual dan team, sehat jasmani dan rohani serta keterampilan berkomunikasi dengan baik."
+            },
+            "R & D": {
+                responsibilities: "mengikuti tren teknologi dan menerapkan teknologi ke dalam proyek R&D, berkomunikasi dengan jelas dan efektif baik dengan anggota tim dan pemangku kepentingan lainnya, menganilisis data dan informasi untuk pengambilan keputusan strategis.",
+                qualifications: "gelar sarjana dalam bidang r&d atau gelar bidang terkait, kemampuan dalam memimpin tim r&d yang efektif, memiliki pemahaman kuat untuk pengembangan produk dalam pertumbuhan inovatif, menguasai ilmu dasar di bidang software / hardware di bidang timbangan."
+            },
+            "FAT": {
+                responsibilities: "N/A ",
+                qualifications: "gelar sarjana di bidang akutansi atau pajak, pengalaman kerja di departemen akutansi minimal 5 tahun, pengalaman menggunakan software akutansi & pajak, sertifikasi (Brevet a dan b) merupakan keharusan, detail dan akurasi tinggi, baik dalama memenuhi tenggat waktu dan menyelesaikan masalah."            }
+        };
+
+        function openModal(jobTitle) {
+            const job = jobDetails[jobTitle];
+            document.getElementById('modalJobTitle').innerText = jobTitle;
+            document.getElementById('modalJobResponsibilities').innerText = job.responsibilities;
+            document.getElementById('modalJobQualifications').innerText = job.qualifications;
+            document.getElementById('jobModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('jobModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('jobModal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

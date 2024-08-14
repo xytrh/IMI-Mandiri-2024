@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garansi | PT Interskala Mandiri Indonesia</title>
+
+    <link rel="icon" type="image/x-icon" href="image/IMI-min.webp" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <section class="flex">
+        <a href="index.html" class="logo">
+          <img src="image/logo-pt-valid-1.webp" alt="Company Logo" />
+        </a>
+
+        <nav class="navbar">
+          <a href="index.html">Beranda</a>
+          <a href="about.html">Tentang</a>
+          <a href="product.html">Produk</a>
+          <a href="contact.html">Kontak</a>
+          <a href="warranty.html">Garansi</a>
+          <a href="https://sonicservicecenter.com/">Service Center</a>
+          <a href="career.html">Karir</a>
+        </nav>
+
+        <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div>
+          <div class="fas fa-search" id="search-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+          <input type="search" id="search-box" placeholder="search here..." />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+      </section>
+    </header>
+    <!-- header section ends -->
+
+    <div class="warranty-container">
+      <section class="home" id="home">
+         <div class="content">
+        </div>  
+      </section>
+    </div>
+   
+
+    <div class="warranty-tab">
+      <h1>Registrasi Garansi</h1>
+      <p>Silahkan melengkapi informasi yang di perlukan dan mengunduh file kartu garansi untuk dilengkapi</p>
+      
+      <form action="/submit-warranty" method="post" enctype="multipart/form-data">
+          <label for="proof-of-purchase">Lampirkan Bukti Pembelian:</label>
+          <input type="file" id="proof-of-purchase" name="proof-of-purchase" required>
+          
+          <label for="delivery-note">Lampirkan Surat Jalan:</label>
+          <input type="file" id="delivery-note" name="delivery-note" required>
+          
+          <label for="warranty-card">Lampirkan Kartu Garansi:</label>
+          <input type="file" id="warranty-card" name="warranty-card" required>
+          
+          <label for="damage-info">Informasi Kerusakan:</label>
+          <textarea id="damage-info" name="damage-info" rows="4" required></textarea>
+          
+          <label for="phone-number">Nomor Telepon:</label>
+          <input type="tel" id="phone-number" name="phone-number" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="address">Alamat:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+          
+          <button type="submit">Kirim Permintaan</button>
+      </form>
+      
+      <div class="download-section">
+          <a href="garansi/Kartu Garansi IMI.pdf" class="download-button" download>Download Kartu Garansi</a>
+      </div>
+  </div>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="" id="modalImage" class="modal-image" />
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>PT Interskala Mandiri Indonesia</h3>
+          <p>EXPORTER, IMPORTER, DISTRIBUTOR & MANUFACTURER SCALE</p>
+          <div class="share">
+            <a href="https://www.facebook.com/interskalaofficial" class="fab fa-facebook-f"></a>
+            <a href="https://x.com/interskalagroup" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/interskalaofficial/" class="fab fa-instagram"></a>
+            <a href="https://id.linkedin.com/company/imimandiri" class="fab fa-linkedin"></a>
+          </div>
+        </div>
+    
+        <div class="box">
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> sales@interskala.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Green Sedayu Biz Park Jl. Daan
+            Mogot KM. 18, DM 12 No.62, 3, RT.3/RW.8, Kalideres, West Jakarta
+            City, Jakarta 11840
+          </a>
+        </div>
+        
+      </div>
+    
+      <div class="credit">
+        Copyright <span> PT Interskala Mandiri Indonesia </span> | all rights
+        reserved
+      </div>
+    </section>
+    
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
